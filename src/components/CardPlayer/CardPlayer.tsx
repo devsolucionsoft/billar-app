@@ -1,8 +1,8 @@
 import { useState } from "react"
 // Styled components
 import { Main } from "./CardPlayer.styled"
-import { MdDeleteForever } from "react-icons/Md"
-import { GrFormSubtract } from "react-icons/Gr"
+import DeleteIcon from "@mui/icons-material/Delete"
+import RemoveIcon from "@mui/icons-material/Remove"
 
 const CardPlayer = () => {
   const [points, setPoint] = useState<number>(0)
@@ -24,7 +24,7 @@ const CardPlayer = () => {
         <h1>player</h1>
 
         <button className="subtract-button" onClick={subtractPoints}>
-          <GrFormSubtract />
+          <RemoveIcon />
         </button>
       </div>
       <div className="row">
@@ -74,7 +74,7 @@ const CardPlayer = () => {
             setPoint(0)
           }}
         >
-          <MdDeleteForever />
+          <DeleteIcon />
         </button>
       </div>
     </Main>

@@ -1,6 +1,7 @@
 // Styled components
 import { Main, Button } from "./DashBar.styled"
-import { RiRepeatFill, RiSearchLine } from "react-icons/Ri"
+import RepeatIcon from "@mui/icons-material/Repeat"
+import SearchIcon from "@mui/icons-material/Search"
 
 export interface ButtonActionI {
   text: string
@@ -55,11 +56,11 @@ const DashBar = () => {
             ></iframe>
             <div className="actions">
               <button>
-                <RiSearchLine />
+                <SearchIcon />
               </button>
               <button>
                 <span>Repetición</span>
-                <RiRepeatFill />
+                <RepeatIcon />
               </button>
             </div>
           </div>
