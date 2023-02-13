@@ -12,7 +12,7 @@ export const Main = styled.div`
   .contain {
     display: flex;
     flex-direction: column;
-    width: 500px;
+    width: 35vw;
 
     .top {
       display: flex;
@@ -82,7 +82,7 @@ export const Main = styled.div`
         position: relative;
         .video {
           width: 100%;
-          height: 280px;
+          height: 18vw;
           border: 3px solid ${(props) => props.theme.colors.dark};
         }
 
@@ -117,7 +117,7 @@ export const Main = styled.div`
 
 export const Button = styled.button<ButtonActionI>`
   cursor: pointer;
-  width: 220px;
+  width: 48%;
   font-size: 22px;
   padding: 8px 10px;
   font-weight: 500;
